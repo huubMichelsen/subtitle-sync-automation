@@ -132,7 +132,3 @@ export SUBTITLE_LANG=cze
 printf '%s\n' "Movie Folder Name" | ./auto_subs.sh --skip-existing-local
 python sub_sync_recursive.py
 ```
-
-## Notes
-
-Jellyfin performs the actual provider lookup and subtitle installation. This project only automates Jellyfin API calls and local subtitle synchronization. The repository intentionally does not store subtitle files, videos, API keys, or private media paths.
