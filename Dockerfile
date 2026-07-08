@@ -19,7 +19,7 @@ COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
 
 # Copy the synchronization scripts into the container.
-COPY sub.py sub_sync_recursive.py ./
+COPY sub.py sub_sync_recursive.py download_jellyfin_subtitles.py auto_subs.sh ./
 
 # Store user media outside the image; docker-compose mounts ./media here.
 WORKDIR /media

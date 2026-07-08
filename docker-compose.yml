@@ -6,6 +6,9 @@ services:
       SUBSYNC_TEMP_DIR: /tmp/subsync_temp
       FFSUBSYNC_BINARY: ffs
       SUBSYNC_SLEEP_SECONDS: "60"
+      JELLYFIN_URL: ${JELLYFIN_URL:-}
+      JELLYFIN_API_KEY: ${JELLYFIN_API_KEY:-}
+      SUBTITLE_LANG: ${SUBTITLE_LANG:-cze}
     volumes:
       - ./media:/media
     working_dir: /media
