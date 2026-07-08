@@ -1,0 +1,11 @@
+services:
+  subtitle-sync:
+    build: .
+    container_name: subtitle_sync
+    environment:
+      SUBSYNC_TEMP_DIR: /tmp/subsync_temp
+      FFSUBSYNC_BINARY: ffs
+      SUBSYNC_SLEEP_SECONDS: "60"
+    volumes:
+      - ./media:/media
+    working_dir: /media
