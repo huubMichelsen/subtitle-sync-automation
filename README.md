@@ -4,7 +4,7 @@
 
 ## Project Overview
 
-Automation toolkit for subtitle workflows around a local media library. It can ask Jellyfin to download subtitles through its configured remote providers, such as OpenSubtitles, and then synchronize downloaded `.srt` files against the actual media audio with [ffsubsync](https://github.com/smacke/ffsubsync) . You also need to get opensubtitles API for this to work.
+Automation toolkit for subtitle workflows around a local media library. It can ask Jellyfin to download subtitles through its configured remote providers, such as OpenSubtitles, and then synchronize downloaded `.srt` files against the actual media audio with [ffsubsync](https://github.com/smacke/ffsubsync) . You also need to get opensubtitles jellyfin addon and put there opensubtitles API for this to work.
 
 The repository is written for repeatable local automation: credentials and paths are passed through CLI flags or environment variables, media files are not committed, and the sync scripts preserve original subtitle files.
 
